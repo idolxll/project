@@ -1,0 +1,60 @@
+/*
+* @description: 商品预订js
+* @author: will
+* @update: will (2017-06-13 11:30)
+* @version: v1.0
+*/
+$(function(){
+	/*弹出预订单运营审核*/
+	$('.yysh-btn').on('click', function(){
+		layer.open({
+		type: 2,
+			title: '运营审核',
+			area : ['100%' , '100%'],
+			anim: '0',
+			resize: false,
+			move: false,
+			shadeClose: true,
+			offset: ['0', '0'],
+			content: 'editGoodsBookingZb.html',
+		});
+	});
+	
+	/*单据汇总*/
+	$(".djhz-btn").on("click", function(){
+		layer.alert('亲，您确定汇总选中的商品预订单吗？', {
+			icon: 3,
+			title: "汇总提示",
+			resize: false, //禁止拉伸
+		}, function(index){
+			layer.msg('恭喜你，汇总成功，请查看商品汇总表！',{icon: 1,time:1500});
+		});
+	});
+	
+	/*财务审核*/
+	$(".cwsh-btn").on("click", function(){
+		layer.confirm('您确定通过该商品预订单审核吗？', {
+			title: '审核提示',
+	  		btn: ['确定','驳回'] //按钮
+		}, function(){
+	  		layer.msg('恭喜你，审核成功！', {icon: 1, time:1500});
+		}, function(){
+			layer.msg('该商品预订单已被你残忍拒绝！', {icon: 2, time:2000});
+		});
+	})
+	
+	/*弹出查看预订商品详情*/
+	$('.details-btn').on('click', function(){
+		layer.open({
+		type: 2,
+			title: '预订商品详情',
+			area : ['100%' , '100%'],
+			anim: '0',
+			resize: false,
+			move: false,
+			shadeClose: true,
+			offset: ['0', '0'],
+			content: 'detailsGoodsBookingZb.html',
+		});
+	});
+});

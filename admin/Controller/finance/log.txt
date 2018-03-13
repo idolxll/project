@@ -1,0 +1,28 @@
+sql信息：'INSERT INTO memwalletbalance (memId,cardId,type,preWallet,amount,lastWallet,title,content,note,inOrOut,status,readed,state,valid,createId,createDate,modifyId,modifyDate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
+sql信息：array (
+  'memId' => '171',
+  'cardId' => '1',
+  'type' => 1,
+  'preWallet' => '9560.00',
+  'amount' => '1.00',
+  'lastWallet' => 9561,
+  'title' => '提现驳回',
+  'content' => '【黎文斌】提现失败退回账户余额1.00元',
+  'note' => '提现失败,退回',
+  'inOrOut' => 1,
+  'status' => 8,
+  'readed' => 0,
+  'state' => 1,
+  'valid' => 1,
+  'createId' => '2',
+  'createDate' => '2017-12-15 22:07:13',
+  'modifyId' => '2',
+  'modifyDate' => '2017-12-15 22:07:13',
+)
+信息：'SELECT w.*,m.bankName,m.account,m.mobile,m.num,m.type as cardtype,m.status as cardstatus,m.cardId FROM `memwalletbalance`  w inner join memcard m on w.cardId=m.cardId  WHERE  w.state=1 and  w.valid=1  order by  w.createDate desc  limit 0,20'
+信息：'SELECT w.*,m.bankName,m.account,m.mobile,m.num,m.type as cardtype,m.status as cardstatus,m.cardId FROM `memwalletbalance`  w inner join memcard m on w.cardId=m.cardId  WHERE  w.state=1 and  w.valid=1  order by  w.createDate desc  limit 0,20'
+信息：'SELECT w.*,m.bankName,m.account,m.mobile,m.num,m.type as cardtype,m.status as cardstatus,m.cardId FROM `memwalletbalance`  w inner join memcard m on w.cardId=m.cardId  WHERE  w.state=1 and  w.valid=1  order by  w.createDate desc  limit 0,20'
+信息：'SELECT w.*,m.bankName,m.account,m.mobile,m.num,m.type as cardtype,m.status as cardstatus,m.cardId FROM `memwalletbalance`  w inner join memcard m on w.cardId=m.cardId  WHERE  w.state=1 and  w.valid=1  order by  w.createDate desc  limit 0,20'
+信息：'SELECT w.*,m.bankName,m.account,m.mobile,m.num,m.type as cardtype,m.status as cardstatus,m.cardId FROM `memwalletbalance`  w inner join memcard m on w.cardId=m.cardId  WHERE  w.state=1 and  w.valid=1  order by  w.createDate desc  limit 0,20'
+信息：'SELECT w.*,m.bankName,m.account,m.mobile,m.num,m.type as cardtype,m.status as cardstatus,m.cardId FROM `memwalletbalance`  w inner join memcard m on w.cardId=m.cardId  WHERE  w.state=1 and  w.valid=1  order by  w.createDate desc  limit 0,20'
+信息：'SELECT w.*,m.bankName,m.account,m.mobile,m.num,m.type as cardtype,m.status as cardstatus,m.cardId FROM `memwalletbalance`  w inner join memcard m on w.cardId=m.cardId  WHERE  w.state=1 and  w.valid=1  order by  w.createDate desc  limit 0,20'

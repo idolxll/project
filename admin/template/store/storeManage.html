@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>汇汇生活商家后台-门店管理</title>
+    <meta name="keywords" content="汇汇生活-让实体店生意火起来">
+    <meta name="description" content="汇汇生活-世界都在用">
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/layui.css" />
+    <link rel="stylesheet" href="../../css/will.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="wboxform">
+				<form class="layui-form">
+					<div class="layui-form-item">
+					    <div class="layui-inline">
+					    	<label class="layui-form-label">门店名称</label>
+					    	<div class="layui-input-inline" style="width: 160px;">
+					        	<input type="text" class="layui-input" placeholder="请输入门店名称">
+					    	</div>
+					    </div>
+					    <div class="layui-inline">
+					    	<label class="layui-form-label">门店编码</label>
+					    	<div class="layui-input-inline" style="width: 120px;">
+					        	<input type="text" class="layui-input" placeholder="请输入门店编码">
+					    	</div>
+					    </div>
+					    <div class="layui-inline">
+					    	<label class="layui-form-label">手机</label>
+					    	<div class="layui-input-inline" style="width: 120px;">
+					        	<input type="text" class="layui-input" placeholder="请输入手机号码">
+					    	</div>
+					    </div>
+					    <input type="button" class="layui-btn layui-btn-small layui-btn-normal" value="查询" />
+						<input type="reset" class="layui-btn layui-btn-small layui-btn-primary" value="重置" />
+					</div>
+				</form>
+			</div>
+			<div class="wbox">
+				<div class="wbox-title">
+					<h5>门店列表</h5>
+					<div class="ibox-tools">
+						<a class="btn-blue new-btn" href="javascript:;">添加</a>
+						<a class="btn-green function-btn" href="javascript:;">修改</a>
+						<a class="btn-shuaxin" href="javascript:location.replace(location.href);" title="刷新">
+							<i class="iconfont will-shuaxin"></i>
+						</a>
+					</div>
+				</div>
+				<div class="wbox-content">
+					<div class="con-table">
+						<table  class="layui-table" style="min-width: 1600px;">
+							<thead>
+								<tr class="text-c">
+									<th width="4%"><input type="checkbox" /></th>
+									<th class="text-l" width="14%">门店名称</th>
+									<th width="11%">门店编码</th>
+									<th width="7%">手机号码</th>
+									<th class="text-l">门店地址</th>
+									<th width="8%">门店电话</th>
+									<th width="5%">添加商品</th>
+									<th width="8%">修改总部商品价格</th>
+									<th width="5%">管理员工</th>
+									<th width="5%">会员系统</th>
+									<th width="5%">现金充值</th>
+									<th width="5%">门店状态</th>
+									<th width="8%">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="text-c">
+									<td><input type="checkbox" /></td>
+									<td class="text-l">汇汇生活品牌店</td>
+									<td>5536546</td>
+									<td>13723553816</td>
+									<td class="text-l">东莞市会展北路鸿发大厦二楼</td>
+									<td>400-0303-236</td>
+									<td class="c-green">√</td>
+									<td class="c-red">×</td>
+									<td class="c-red">×</td>
+									<td class="c-red">×</td>
+									<td class="c-red">×</td>
+									<td>审核中</td>
+									<td>
+										<a class="btn-green">修改</a>
+										<a class="btn-red del-btn">解绑</a>
+									</td>
+								</tr>
+								<tr class="text-c">
+									<td><input type="checkbox" /></td>
+									<td class="text-l">汇汇生活品牌店</td>
+									<td>5536546</td>
+									<td>13723553816</td>
+									<td class="text-l">东莞市会展北路鸿发大厦二楼</td>
+									<td>400-0303-236</td>
+									<td class="c-green">√</td>
+									<td class="c-red">×</td>
+									<td class="c-red">×</td>
+									<td class="c-red">×</td>
+									<td class="c-red">×</td>
+									<td class="c-red">关闭</td>
+									<td>
+										<a class="btn-green">修改</a>
+										<a class="btn-red del-btn">解绑</a>
+									</td>
+								</tr>
+								<tr class="text-c">
+									<td><input type="checkbox" /></td>
+									<td class="text-l">汇汇生活品牌店</td>
+									<td>5536546</td>
+									<td>13723553816</td>
+									<td class="text-l">东莞市会展北路鸿发大厦二楼</td>
+									<td>400-0303-236</td>
+									<td class="c-green">√</td>
+									<td class="c-red">×</td>
+									<td class="c-green">√</td>
+									<td class="c-red">×</td>
+									<td class="c-green">√</td>
+									<td class="c-green">使用</td>
+									<td>
+										<a class="btn-green">修改</a>
+										<a class="btn-red del-btn">解绑</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="page-list ng-isolate-scope" conf="paginationConf">
+						<div class="page-total">
+							 每页
+							<select class="ng-pristine ng-untouched ng-valid ng-not-empty">
+								<option label="5" value="number:5" selected="selected">5</option>
+								<option label="10" value="number:10">10</option>
+								<option label="20" value="number:20">20</option>
+							</select>
+							/共<strong class="ng-binding">32</strong>条
+						</div>
+						<ul class="pagination">
+							<li class="disabled"><span>«</span></li>
+							<li class="ng-scope active"><span class="ng-binding">1</span></li>
+							<li class="ng-scope"><span class="ng-binding">2</span></li>
+							<li class="ng-scope"><span class="ng-binding">3</span></li>
+							<li class="ng-scope"><span class="ng-binding">4</span></li>
+							<li class="ng-scope"><span class="ng-binding">5</span></li>
+							<li class="ng-scope"><span class="ng-binding">6</span></li>
+							<li class="ng-scope"><span class="ng-binding">7</span></li>
+							<li><span>»</span></li>
+						</ul>
+						<div class="no-items ng-hide">
+							暂无数据
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--添加门店-->
+	<div class="popup bind-popup">
+		<form class="layui-form">
+			<div id="codingparent">
+				<div class="layui-form-item">
+					<label class="layui-form-label">门店编码</label>
+					<div class="layui-input-inline" style="width: 200px;">
+						<input type="text" class="layui-input" id="coding" placeholder="请输入门店编码">
+					</div>
+				</div>
+				<div class="layui-form-item" style="margin-top: 10px;">
+					<label class="layui-form-label">门店编码</label>
+					<div class="layui-input-inline" style="width: 200px;">
+						<input type="text" class="layui-input" id="coding" placeholder="请输入门店编码">
+					</div>
+				</div>
+				<div class="layui-form-item" style="margin-top: 10px;">
+					<label class="layui-form-label">门店编码</label>
+					<div class="layui-input-inline" style="width: 200px;">
+						<input type="text" class="layui-input" id="coding" placeholder="请输入门店编码">
+					</div>
+				</div>
+				<div class="layui-form-item" style="margin-top: 10px;">
+					<label class="layui-form-label">门店编码</label>
+					<div class="layui-input-inline" style="width: 200px;">
+						<input type="text" class="layui-input" id="coding" placeholder="请输入门店编码">
+					</div>
+				</div>
+				<div class="layui-form-item" style="margin-top: 10px;">
+					<label class="layui-form-label">门店编码</label>
+					<div class="layui-input-inline" style="width: 200px;">
+						<input type="text" class="layui-input" id="coding" placeholder="请输入门店编码">
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item" style="margin-top: 10px;">
+				<a class="btn-green" href="javascript:;" style="width: 264px; height: 36px; line-height: 36px; font-size: 14px;">更多</a>
+			</div>
+			<div class="layui-form-item" style="margin-top: 12px;">
+				<label class="layui-form-label">&#12288;&#12288;&#12288;&#12288;</label>
+				<input type="button" class="layui-btn layui-btn-small layui-btn-normal bangding-btn" value="保存" />
+				<input type="reset" class="layui-btn layui-btn-small layui-btn-primary" value="重置" />
+			</div>
+		</form>
+	</div>
+	<!--功能修改-->
+	<div class="popup fendian-change">
+		<form class="layui-form layui-form-pane">
+			<div class="layui-form-item">
+				<label class="layui-form-label" style="width: 150px; text-align: right;">添加商品</label>
+				<div class="layui-input-block">
+					<div class="will-check">
+						<input type="checkbox" />
+						<i class="iconfont"></i>
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item" style="margin-top: 10px;">
+				<label class="layui-form-label" style="width: 150px; text-align: right;">修改总部商品价格</label>
+				<div class="layui-input-block">
+					<div class="will-check">
+						<input type="checkbox" />
+						<i class="iconfont"></i>
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item" style="margin-top: 10px;">
+				<label class="layui-form-label" style="width: 150px; text-align: right;">管理员工</label>
+				<div class="layui-input-block">
+					<div class="will-check">
+						<input type="checkbox" />
+						<i class="iconfont"></i>
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item" style="margin-top: 10px;">
+				<label class="layui-form-label" style="width: 150px; text-align: right;">会员系统</label>
+				<div class="layui-input-block">
+					<div class="will-check">
+						<input type="checkbox" />
+						<i class="iconfont"></i>
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item" style="margin-top: 10px;">
+				<label class="layui-form-label" style="width: 150px; text-align: right;">现金充值</label>
+				<div class="layui-input-block">
+					<div class="will-check">
+						<input type="checkbox" />
+						<i class="iconfont"></i>
+					</div>
+				</div>
+			</div>
+			<div  class="layui-form-item" style="margin-top: 12px;">
+				<input type="button" class="layui-btn layui-btn-small layui-btn-normal change-btn" value="保存" style="display:block;margin: 0 auto;" />
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="../../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../../js/layer/layer.min.js" ></script>
+	<script type="text/javascript" src="../../js/storeManage.js" ></script>
+</body>
+</html>

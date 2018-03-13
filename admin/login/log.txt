@@ -1,0 +1,14 @@
+QWE信息：stdClass::__set_state(array(
+   'code' => '-1',
+   'message' => '帐号不存在',
+   'data' => 
+  stdClass::__set_state(array(
+  )),
+))
+QWE信息：stdClass::__set_state(array(
+   'code' => '-1',
+   'message' => '帐号或密码错误',
+   'data' => 
+  stdClass::__set_state(array(
+  )),
+))
